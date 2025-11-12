@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Rhythm of Culture</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="paper">
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand-wrap">
+          <h1 class="brand">Rhythm of Culture</h1>
+          <p class="tag">“When words are not enough, the body speaks through rhythm and grace.”</p>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="street.html" class="nav-link">Street Dances</a>
+          <a href="folk.html" class="nav-link">Folk Dances</a>
+          <a href="social.html" class="nav-link">Social Dances</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="contact-card">
+        <h2>Contact / Inquiries</h2>
+        <p class="muted">Send us questions, suggestions, or resources. Messages are stored locally in your browser (demo).</p>
+
+        <form id="contactForm" class="contact-form">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" />
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" />
+
+          <label for="subject">Subject</label>
+          <input id="subject" type="text" placeholder="e.g., Request for performance info" />
+
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write your message..." rows="6"></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+          <p id="successMsg" class="success">✅ Message saved locally. (Demo only)</p>
+        </form>
+
+        <section class="saved-messages">
+          <h3>Saved messages (demo)</h3>
+          <ul id="messagesList"></ul>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made by students • School Project • © <span id="year6"></span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
